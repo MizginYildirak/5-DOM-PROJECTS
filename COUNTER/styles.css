@@ -1,0 +1,47 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #151922;
+}
+
+.container {
+    background-color: white;
+    letter-spacing: 3px;
+}
+
+.text-area {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+#output {
+    font-size: 100px;
+}
+
+#button-area {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#button-area button {
+    letter-spacing: 3px;
+    padding: 1rem;
+    background: white;
+    border: 1px solid;
+    cursor: pointer;
+}
+
