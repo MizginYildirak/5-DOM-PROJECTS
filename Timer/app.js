@@ -53,5 +53,5 @@ reset.addEventListener('click', function() {
     minuteElement.innerText = '00';
     minute = 0;
     second = 0;
-    reset.style.backgroundColor = '	rgb(255,127,80,0.3)';
+    reset.style.backgroundColor = 'rgb(255,127,80,0.3)';
 })
