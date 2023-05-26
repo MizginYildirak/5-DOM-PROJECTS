@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 2</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container" onclick="removeisActive()">
+
+        <div class="row-item">
+            <div class="label-item">
+                <label for="Note">Note:</label>
+            </div>
+            <div class="input-item">
+                <input class="note-input" type="text">
+            </div>
+        </div>
+
+        <div class="row-item">
+            <div class="label-item">
+                <label for="Gender">Gender:</label>
+            </div>
+            <div class="input-item dropdown-wrapper">
+                <input class="dropdown-input gender-item" type="text">
+                <i class="fa-solid fa-caret-down"></i>
+
+                <ul class="list-wrapper">
+                    <li class="male-list-item  list-item">male</li>
+                    <li class="female-list-item list-item">female</li>
+                    <li class="other" onclick="customizeGender()">other</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="hidden-row-item item is-active" id="item">
+            <div class="label-item">
+                <label for="Customize Gender">Customize Gender:</label>
+
+            </div>
+            <div class="input-item">
+                <div class="gender-input-item"><input class="gender-text" type="text"></div>
+                <span class="warning-gender"></span>
+            </div>
+        </div>
+
+        <div class="bottom-row-item">
+            <div class="bottom-item">
+                <button class="submit">Submit</button>
+                <button class="reset">Reset</button>
+                <a href="Fill form"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <select name="" id="">
+        <option>male</option>
+        <option>Famale</option>
+        <option>other</option>
+    </select> -->
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
